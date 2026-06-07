@@ -3,7 +3,7 @@ body {
     font-family: 'Tajawal', sans-serif;
     /* دمج لون شعارك الأزرق الداكن كطبقة شفافة فوق الصورة لضمان وضوح القراءة */
     background: linear-gradient(rgba(11, 26, 48, 0.75), rgba(11, 26, 48, 0.90)),
-        url('arka.png') no-repeat center center fixed;
+        url('images/arka.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -306,15 +306,4 @@ body {
     /* يتحول لون الشعار للون الداكن ليتناسق مع الخلفية الذهبية */
     transform: scale(1.1);
     /* تكبير الشعار الداخلي قليلاً */
-}
-
-.product-image {
-    width: 100%;
-    height: 300px;
-    /* أو أي ارتفاع تفضله */
-    object-fit: contain;
-    /* هذه الميزة تجعل الصورة تظهر كاملة دون قص */
-    background-color: #f8f8f8;
-    /* خلفية خفيفة خلف العطر */
-    padding: 10px;
 }
