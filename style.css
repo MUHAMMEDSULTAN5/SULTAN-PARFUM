@@ -1,0 +1,320 @@
+/* إعدادات عامة مع الصورة كخلفية */
+body {
+    font-family: 'Tajawal', sans-serif;
+    /* دمج لون شعارك الأزرق الداكن كطبقة شفافة فوق الصورة لضمان وضوح القراءة */
+    background: linear-gradient(rgba(11, 26, 48, 0.75), rgba(11, 26, 48, 0.90)),
+        url('arka.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    /* النص العام باللون الأبيض */
+}
+
+/* --- 1. شريط الشعار العلوي --- */
+/* --- 1. شريط الشعار العلوي --- */
+.site-header {
+    background-color: rgba(11, 26, 48, 0.95);
+    text-align: center;
+    padding: 5px 20px;
+    /* تم تقليل المسافة من الأعلى والأسفل بشكل كبير */
+    border-bottom: 2px solid #c5a059;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+    margin: 0;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 80px 20px 60px;
+    /* مساحة واسعة ليتنفس التصميم */
+    /* لا يوجد لون خلفية هنا لكي تظهر صورة العطور من خلفه */
+}
+
+/* تنسيق العبارة الترحيبية */
+.hero-slogan {
+    color: #c5a059;
+    font-size: 38px;
+    /* تكبير الخط ليكون بارزاً */
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    /* ظل أسود قوي لضمان القراءة فوق الصورة */
+}
+
+/* تنسيق الوصف القصير */
+.hero-description {
+    color: #ffffff;
+    /* لون أبيض ناصع */
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    /* ظل قوي للقراءة */
+}
+
+/* تنسيق زر تصفح التشكيلة */
+.hero-btn {
+    display: inline-block;
+    background: rgba(11, 26, 48, 0.6);
+    /* خلفية داكنة نصف شفافة للزر */
+    color: #c5a059;
+    border: 2px solid #c5a059;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    /* تأثير زجاجي خفيف للزر */
+}
+
+.hero-btn:hover {
+    background: linear-gradient(135deg, #d4af37, #aa7c11);
+    color: #0b1a30;
+    border-color: transparent;
+    box-shadow: 0 5px 20px rgba(197, 160, 89, 0.6);
+    transform: translateY(-3px);
+}
+
+
+.header-logo {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+    /* ظل خفيف للشعار */
+}
+
+/* الحاوية الرئيسية */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* عنوان القسم */
+.section-title {
+    text-align: center;
+    color: #c5a059;
+    /* لون ذهبي ليتناسب مع الخلفية الداكنة */
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* ظل للنص لإبرازه */
+}
+
+/* شبكة المنتجات */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* بطاقة المنتج (تأثير الزجاج الفخم) */
+.product-card {
+    background-color: rgba(11, 26, 48, 0.6);
+    /* لون أزرق داكن شفاف جداً */
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    /* إطار ذهبي شفاف */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    /* تأثير الزجاج */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* التوهج عند تمرير الماوس */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(197, 160, 89, 0.25);
+    /* توهج ذهبي خفيف */
+    border-color: rgba(197, 160, 89, 0.8);
+}
+
+/* صورة الملصق واسم العطر */
+.product-label-container {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto 20px auto;
+}
+
+.label-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.perfume-name-overlay {
+    position: absolute;
+    top: 71.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c5a059;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    width: 85%;
+    text-align: center;
+    text-shadow: 1px 1px 3px #000;
+    letter-spacing: 1px;
+}
+
+.product-name {
+    color: #c5a059;
+    margin: 0 0 10px;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* تنسيق السعر */
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(11, 26, 48, 0.9);
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #c5a059;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* حقل العنوان */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(197, 160, 89, 0.5);
+    background-color: rgba(255, 255, 255, 0.85);
+    /* خلفية بيضاء شفافة للحقل */
+    color: #0b1a30;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #c5a059;
+    box-shadow: 0 0 8px rgba(197, 160, 89, 0.5);
+}
+
+/* زر الشراء */
+.whatsapp-btn {
+    background: linear-gradient(135deg, #d4af37, #aa7c11);
+    color: #0b1a30;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.whatsapp-btn:hover {
+    background: linear-gradient(135deg, #f5d461, #c89518);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
+}
+
+/* التذييل */
+.site-footer {
+    background-color: rgba(11, 26, 48, 0.9);
+    color: #a8b2c1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #c5a059;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+}
+
+/* --- تنسيق أيقونات التواصل الاجتماعي في التذييل --- */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.08);
+    /* زجاجي شفاف */
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    /* إطار ذهبي ناعم */
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+}
+
+.social-link svg {
+    width: 100%;
+    height: 100%;
+    fill: #c5a059;
+    /* الأيقونات باللون الذهبي الملكي لشعارك */
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* تأثير التمرير (Hover Effect) الفخم */
+.social-link:hover {
+    transform: translateY(-5px);
+    /* ترتفع للأعلى قليلاً */
+    background-color: #c5a059;
+    /* تصبح الخلفية ذهبية بالكامل */
+    border-color: #c5a059;
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+    /* توهج ذهبي سفلي */
+}
+
+.social-link:hover svg {
+    fill: #0b1a30;
+    /* يتحول لون الشعار للون الداكن ليتناسق مع الخلفية الذهبية */
+    transform: scale(1.1);
+    /* تكبير الشعار الداخلي قليلاً */
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    /* أو أي ارتفاع تفضله */
+    object-fit: contain;
+    /* هذه الميزة تجعل الصورة تظهر كاملة دون قص */
+    background-color: #f8f8f8;
+    /* خلفية خفيفة خلف العطر */
+    padding: 10px;
+}
